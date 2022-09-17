@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0U1nx2fGfLbfrH52+6hCQYziHptu+Ajzo5NSt6c/T4Td83jbV3v+8IVSaDm7oxX1xDYgeVfTL8j9hnczfOf4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\Fanout-consumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bacharel\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Bacharel\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Bacharel\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
+    "C:\\Users\\Bacharel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

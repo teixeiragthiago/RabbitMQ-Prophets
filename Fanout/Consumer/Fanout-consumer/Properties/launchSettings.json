@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fanout-consumer": {
+      "commandName": "Project",
+      "commandLineArgs": "order"
+    }
+  }
+}

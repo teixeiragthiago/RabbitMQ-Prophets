@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ed3bd966-f33b-4e59-8f84-e66e5bd45478": {
+      "ProjectGuid": "ed3bd966-f33b-4e59-8f84-e66e5bd45478",
+      "DisplayName": "Fanout-exg",
+      "ColorIndex": 0
+    },
+    "da5d3739-40e7-4392-a79d-0787cce4ef1a": {
+      "ProjectGuid": "da5d3739-40e7-4392-a79d-0787cce4ef1a",
+      "DisplayName": "Fanout-consumer",
+      "ColorIndex": 1
+    },
+    "eff3e1ae-0bac-4e66-bdd6-bdcb3171d2d2": {
+      "ProjectGuid": "eff3e1ae-0bac-4e66-bdd6-bdcb3171d2d2",
+      "DisplayName": "Fanout-producer",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

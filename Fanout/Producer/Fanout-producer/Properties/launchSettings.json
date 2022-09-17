@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fanout-producer": {
+      "commandName": "Project",
+      "commandLineArgs": "order"
+    }
+  }
+}
