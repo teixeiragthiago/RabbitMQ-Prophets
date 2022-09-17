@@ -1,10 +1,12 @@
-﻿using RabbitMQ.Client;
+﻿using Direct_producer.Models;
+using RabbitMQ.Client;
 using System;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Fanout_producer
+namespace Direct_producer
 {
     public class Program
     {
@@ -33,14 +35,13 @@ namespace Fanout_producer
             var channel = connection.CreateModel();
 
             channel.QueueDeclare(queue: "order", durable: false, exclusive: false, autoDelete: false, arguments: null);
-            channel.QueueDeclare(queue: "logs", durable: false, exclusive: false, autoDelete: false, arguments: null);
             channel.QueueDeclare(queue: "finance_orders", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
-            channel.ExchangeDeclare("order", type: "fanout");
+            channel.ExchangeDeclare("order", type: "direct");
 
-            channel.QueueBind("order", "order", ""); //Exchange do tipo Fanout ignora o RoutingKey, mais usado no tipo Direct
-            channel.QueueBind("logs", "order", "");
-            channel.QueueBind("finance_orders", "order", "");
+            channel.QueueBind("order", "order", "order_new"); 
+            channel.QueueBind("order", "order", "order_upd");
+            channel.QueueBind("finance_orders", "order", "order_new");
 
             return channel;
         }
@@ -49,7 +50,8 @@ namespace Fanout_producer
         {
             Task.Run(() =>
             {
-                int count = 0;
+                var idIndex = 1;
+                var random = new Random(DateTime.UtcNow.Millisecond * DateTime.UtcNow.Second);
                 while (true)
                 {
                     try
@@ -57,15 +59,19 @@ namespace Fanout_producer
                         Console.WriteLine("Pressione qualquer tecla para produzir 10 mensagens.");
                         Console.ReadLine();
 
-                        for (int i = 0; i < 10; i++)
-                        {
-                            var message = $"OrderNumber: {count++} from {publisherName})";
-                            var body = Encoding.UTF8.GetBytes(message);
+                        var order = new Order(idIndex++, random.Next(1000, 9999));
+                        var message1 = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(order));
 
-                            chanel.BasicPublish(exchange: "order", "", null, body);
+                        chanel.BasicPublish("order", "order_new", basicProperties: null, message1);
+                        Console.WriteLine($"New order_ Id: {order.Id}, Amount: {order.Amount} | Created: {order.CreateDate}");
 
-                            Console.WriteLine($"{publisherName} - [x] Sent {count}", message);
-                        }
+
+                        order.UpdateOrder(random.Next(100, 999));
+                        var message2 = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(order));
+
+                        chanel.BasicPublish("order", "order_new", basicProperties: null, message2);
+                        Console.WriteLine($"New order_ Id: {order.Id}, Amount: {order.Amount} | LastUpdated: {order.LastUpdated}");
+
 
                     }
                     catch (Exception ex)
@@ -77,6 +83,5 @@ namespace Fanout_producer
                 }
             });
         }
-
     }
 }
