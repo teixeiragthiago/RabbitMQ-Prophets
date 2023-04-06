@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IPHDKnAcg8X9gXSWFd6PnHcu0wzReVif9WADJbluJquFblPbShEHlzcdr0WsDhnVk2vNRW+pJ+25bvoNphAZSQ==",
+  "dgSpecHash": "N9tsaJg8MFYBB6mMREcnh4LWrC8rm8G6bNPGByM+DLHT2jYZGRU7othfrx5NZy2OSFLJSdZjMCxLyyNqyhysOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Direct\\Consumer\\Direct-consumer\\Direct-consumer.csproj",
+  "projectFilePath": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Direct/Consumer/Direct-consumer/Direct-consumer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bacharel\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
-    "C:\\Users\\Bacharel\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Bacharel\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
-    "C:\\Users\\Bacharel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "/Users/thiagoteixeira/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
+    "/Users/thiagoteixeira/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/thiagoteixeira/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

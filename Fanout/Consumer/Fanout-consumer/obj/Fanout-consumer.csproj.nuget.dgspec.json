@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\Fanout-consumer.csproj": {}
+    "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Fanout/Consumer/Fanout-consumer/Fanout-consumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\Fanout-consumer.csproj": {
+    "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Fanout/Consumer/Fanout-consumer/Fanout-consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\Fanout-consumer.csproj",
+        "projectUniqueName": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Fanout/Consumer/Fanout-consumer/Fanout-consumer.csproj",
         "projectName": "Fanout-consumer",
-        "projectPath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\Fanout-consumer.csproj",
-        "packagesPath": "C:\\Users\\Bacharel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Fanout\\Consumer\\Fanout-consumer\\obj\\",
+        "projectPath": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Fanout/Consumer/Fanout-consumer/Fanout-consumer.csproj",
+        "packagesPath": "/Users/thiagoteixeira/.nuget/packages/",
+        "outputPath": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Fanout/Consumer/Fanout-consumer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bacharel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/thiagoteixeira/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,14 +49,23 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -66,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
         }
       }
     }

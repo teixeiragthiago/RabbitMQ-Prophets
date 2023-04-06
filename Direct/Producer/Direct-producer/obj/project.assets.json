@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "RabbitMQ.Client/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -9,10 +9,14 @@
           "System.Threading.Channels": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -27,10 +31,14 @@
       "System.Threading.Channels/4.7.1": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -101,36 +109,34 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "RabbitMQ.Client >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bacharel\\.nuget\\packages\\": {}
+    "/Users/thiagoteixeira/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Direct\\Producer\\Direct-producer\\Direct-producer.csproj",
+      "projectUniqueName": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Direct/Producer/Direct-producer/Direct-producer.csproj",
       "projectName": "Direct-producer",
-      "projectPath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Direct\\Producer\\Direct-producer\\Direct-producer.csproj",
-      "packagesPath": "C:\\Users\\Bacharel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bacharel\\Documents\\Projects\\RabbitMQ-Phophets\\RabbitMQ-Prohets\\Direct\\Producer\\Direct-producer\\obj\\",
+      "projectPath": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Direct/Producer/Direct-producer/Direct-producer.csproj",
+      "packagesPath": "/Users/thiagoteixeira/.nuget/packages/",
+      "outputPath": "/Users/thiagoteixeira/Documents/RabbitMQ-Prophets/Direct/Producer/Direct-producer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bacharel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thiagoteixeira/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -141,8 +147,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "RabbitMQ.Client": {
             "target": "Package",
@@ -155,22 +161,17 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
       }
     }
   }
