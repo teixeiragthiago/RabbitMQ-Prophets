@@ -11,3 +11,9 @@ Utilizado quando preciso fazer cópias da mesma mensagem para mais de uma fila. 
 O tipo de exchange 'fanout' ignora o parâmetro 'routingKey'.
 
 ![img_2.png](img_2.png)
+
+## Direct
+
+Só irá rotear a mensagem para a fila se ela possuir a mesma chave de rota (routingKey)
+
+![img_7.png](img_7.png)
