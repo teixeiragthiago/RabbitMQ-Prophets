@@ -10,4 +10,4 @@ Utilizado quando preciso fazer cópias da mesma mensagem para mais de uma fila. 
 
 O tipo de exchange 'fanout' ignora o parâmetro 'routingKey'.
 
-![img_1.png](img_1.png)
+![img_2.png](img_2.png)
